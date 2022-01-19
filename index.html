@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Radio Button Dot-Slider (Pure CSS)</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:400,600,800'>
+<link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.4.1/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<div id="form-wrapper">
+	<h2 style="font-size: 5em;margin: 0.15em;margin-top: .5em;">BDSM Test</h2>
+	<h2 style="font-size: 1em;margin: 0.15em;margin-top: .5em;">( Just An Example Of Our Plan & Does Not Work Yet )</h2>
+	<form action="/p/quote.php" method="GET">
+		<div class="selection-container" style="">
+		<h1 id="form-title" style="padding-top: 1.5em;">1. Do find comfort when in control?</h1>
+		<div id="debt-amount-slider">
+			<input type="radio" name="question1" id="question1-1" value="1" required>
+			<label for="question1-1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
+			<input type="radio" name="question1" id="question1-2" value="2" required>
+			<label for="question1-2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
+			<input type="radio" name="question1" id="question1-3" value="3" required>
+			<label for="question1-3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
+			<input type="radio" name="question1" id="question1-4" value="4" required>
+			<label for="question1-4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
+			<input type="radio" name="question1" id="question1-5" value="5" required>
+			<label for="question1-5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
+			<div id="debt-amount-pos"></div>
+		</div>
+		</div>
+		<div class="selection-container" style="">
+			<h1 id="form-title" style="padding-top: 1.5em;">2. Do you enjoy being given physical pain?</h1>
+			<div id="debt-amount-slider">
+				<input type="radio" name="debt-amount" id="1" value="1" required>
+				<label for="1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
+				<input type="radio" name="debt-amount" id="2" value="2" required>
+				<label for="2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
+				<input type="radio" name="debt-amount" id="3" value="3" required>
+				<label for="3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
+				<input type="radio" name="debt-amount" id="4" value="4" required>
+				<label for="4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
+				<input type="radio" name="debt-amount" id="5" value="5" required>
+				<label for="5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
+				<div id="debt-amount-pos"></div>
+			</div>
+			</div>
+	</form>
+	<button type="submit">Submit</button>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
