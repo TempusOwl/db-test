@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+    background-color: rgb(15, 14, 19);
+    color: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url('../img/bg.png');
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 90%);
+    font-weight: bold;
+}
+
+
+.bg-light {
+    background-color: #7286ff !important;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: .15em;
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 2em;
+}
+
+
+.jumbotron {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.jumbotron-chonk {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0rem 0rem;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.progress {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: .25rem;
+    height: 1rem;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}

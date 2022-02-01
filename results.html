@@ -28,10 +28,11 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main_results.css">
 
 </head>
 
+</head>
 <div class=menubar>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex;flex-direction: row;">
         <a class="navbar-brand" href="#">DB</a>
@@ -66,50 +67,40 @@
     </nav>
 </div>
 
-
 <body>
-
-	<!-- partial:index.partial.html -->
-	<div id="form-wrapper">
-		<h2 style="font-size: 5em;margin: 0.15em;margin-top: .5em;">BDSM Test</h2>
-		<button onclick="window.location.href='results.html';">See Results</button>
-		<form action="/p/quote.php" method="GET">
-			<div class="selection-container" style="">
-				<h1 id="form-title" style="padding-top: 1.5em;">1. Do find comfort when in control?</h1>
-				<div id="debt-amount-slider">
-					<input type="radio" name="question1" id="question1-1" value="1" required>
-					<label for="question1-1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
-					<input type="radio" name="question1" id="question1-2" value="2" required>
-					<label for="question1-2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
-					<input type="radio" name="question1" id="question1-3" value="3" required>
-					<label for="question1-3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
-					<input type="radio" name="question1" id="question1-4" value="4" required>
-					<label for="question1-4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
-					<input type="radio" name="question1" id="question1-5" value="5" required>
-					<label for="question1-5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
-					<div id="debt-amount-pos"></div>
-				</div>
-			</div>
-			<div class="selection-container" style="">
-				<h1 id="form-title" style="padding-top: 1.5em;">2. Do you enjoy being given physical pain?</h1>
-				<div id="debt-amount-slider">
-					<input type="radio" name="debt-amount" id="1" value="1" required>
-					<label for="1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
-					<input type="radio" name="debt-amount" id="2" value="2" required>
-					<label for="2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
-					<input type="radio" name="debt-amount" id="3" value="3" required>
-					<label for="3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
-					<input type="radio" name="debt-amount" id="4" value="4" required>
-					<label for="4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
-					<input type="radio" name="debt-amount" id="5" value="5" required>
-					<label for="5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
-					<div id="debt-amount-pos"></div>
-				</div>
-			</div>
-		</form>
-
-	</div>
-	<!-- partial -->
+    <div class="topbox">
+    </div>
+    <div class="container">
+        <div class="jumbotron-chonk" style="background-color: #00000068; padding-left;margin-left: 1em;">
+            <h2 style="text-align: center;font-size: 3em;">BDSM Test Results</h2>
+            <p style="text-align: center;">!!!! This data is fake and not accurate !!! This is an example of what I am
+                working on and does not work currently.</p>
+            <div class="jumbotron" style="background-color: #0000009c;">
+                <div class="results" style="text-align: center;">
+                    <h2>Dominant (15%)</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h2>Submissive (90%)</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h2>Switch (53%)</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="53"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h2>Masochist (91%)</h2>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 91%" aria-valuenow="91"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
