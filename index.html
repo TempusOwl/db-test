@@ -21,6 +21,7 @@
     <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png">
     <script src="js/jquery.min.js"></script>
     <script src="js/progress.js"></script>
+    <script src="js/results.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -68,47 +69,54 @@
 
 <body>
 
-	<!-- partial:index.partial.html -->
-	<div id="form-wrapper">
-		<h2 style="font-size: 5em;margin: 0.15em;margin-top: .5em;">BDSM Test</h2>
-		<button onclick="window.location.href='results.html';">See Results</button>
-		<form action="/p/quote.php" method="GET">
-			<div class="selection-container" style="">
-				<h1 id="form-title" style="padding-top: 1.5em;">1. Do find comfort when in control?</h1>
-				<div id="debt-amount-slider">
-					<input type="radio" name="question1" id="question1-1" value="1" required>
-					<label for="question1-1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
-					<input type="radio" name="question1" id="question1-2" value="2" required>
-					<label for="question1-2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
-					<input type="radio" name="question1" id="question1-3" value="3" required>
-					<label for="question1-3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
-					<input type="radio" name="question1" id="question1-4" value="4" required>
-					<label for="question1-4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
-					<input type="radio" name="question1" id="question1-5" value="5" required>
-					<label for="question1-5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
-					<div id="debt-amount-pos"></div>
-				</div>
-			</div>
-			<div class="selection-container" style="">
-				<h1 id="form-title" style="padding-top: 1.5em;">2. Do you enjoy being given physical pain?</h1>
-				<div id="debt-amount-slider">
-					<input type="radio" name="debt-amount" id="1" value="1" required>
-					<label for="1" data-debt-amount="Strongly Disagree" style="color: red;"></label>
-					<input type="radio" name="debt-amount" id="2" value="2" required>
-					<label for="2" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
-					<input type="radio" name="debt-amount" id="3" value="3" required>
-					<label for="3" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
-					<input type="radio" name="debt-amount" id="4" value="4" required>
-					<label for="4" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
-					<input type="radio" name="debt-amount" id="5" value="5" required>
-					<label for="5" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
-					<div id="debt-amount-pos"></div>
-				</div>
-			</div>
-		</form>
+    <!-- partial:index.partial.html -->
+    <div id="form-wrapper">
+        <h2 style="font-size: 5em;margin: 0.15em;margin-top: .5em;">BDSM Test</h2>
+        <button onclick="window.location.href='results.html';">See Results</button>
+        <form action="/p/quote.php" method="GET">
+            <div class="selection-container" style="">
+                <h1 id="form-title" style="padding-top: 1.5em;">1. Do you find comfort when in control?</h1>
+                <div id="debt-amount-slider">
+                    <input value="question-1-SD" type="radio" name="question1" id="question-1-SD" required>
+                    <label for="question-1-SD" data-debt-amount="Strongly Disagree" style="color: red;"></label>
+                    <input value="question-1-D" type="radio" name="question1" id="question-1-D" required>
+                    <label for="question-1-D" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
+                    <input value="question-1-N" type="radio" name="question1" id="question-1-N" required>
+                    <label for="question-1-N" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
+                    <input value="question-1-A" type="radio" name="question1" id="question-1-A" required>
+                    <label for="question-1-A" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
+                    <input value="question-1-SA" type="radio" name="question1" id="question-1-SA" required>
+                    <label for="question-1-SA" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
+                    <div id="debt-amount-pos"></div>
+                </div>
+            </div>
+            <div class="selection-container" style="">
+                <h1 id="form-title" style="padding-top: 1.5em;">2. Do you enjoy being given physical pain?</h1>
+                <div id="debt-amount-slider">
+                    <input value="question-2-SD" type="radio" name="question2" id="question-2-SD" required>
+                    <label for="question-2-SD" data-debt-amount="Strongly Disagree" style="color: red;"></label>
+                    <input value="question-2-D" type="radio" name="question2" id="question-2-D" required>
+                    <label for="question-2-D" data-debt-amount="Disagree" style="color:#ff6f00;"></label>
+                    <input value="question-2-N" type="radio" name="question2" id="question-2-N" required>
+                    <label for="question-2-N" data-debt-amount="Neutral" style="color: rgb(255, 246, 117);"></label>
+                    <input value="question-2-A" type="radio" name="question2" id="question-2-A" required>
+                    <label for="question-2-A" data-debt-amount="Agree" style="color: rgb(202, 248, 129);"></label>
+                    <input value="question-2-SA" type="radio" name="question2" id="question-2-SA" required>
+                    <label for="question-2-SA" data-debt-amount="Strongly Agree" style="color: rgb(0, 255, 0);"></label>
+                    <div id="debt-amount-pos"></div>
+                </div>
+            </div>
+        </form>
 
-	</div>
-	<!-- partial -->
+    </div>
+    <!-- partial -->
+    <input value='a' type="radio" name="erarbeiten">a
+    <input value='b' type="radio" name="erarbeiten">b
+    <input value='c' type="radio" name="erarbeiten">c
+
+
 </body>
+<!--Results.js must load last for some reason? This is a hacky fix-->
+<script src="js/selections.js"></script>
 
 </html>
